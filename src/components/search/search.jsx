@@ -59,7 +59,7 @@ const SearchContainer = ({ searchValue, onSubmitSearch, onSearch, onSearchButton
         <img className='suggested-users-picture' src={user.profilePictureUrl} alt="" />
         <div className='suggested-users-text-container'>
         <h2 className='suggested-users-name' key={user._id}>{user.username}</h2>
-        <p className='suggested-users-text'><a className='unset' href={`/user/${username}`}>Tap to chat...</a>.</p>
+        <p className='suggested-users-text'><a className='unset' href={`/user/${user.username}`}>Tap to chat...</a>.</p>
           </div>        
         </div>
 ))}
