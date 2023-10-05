@@ -21,7 +21,7 @@ const CreatePost = () => {
   
       useEffect(() => {
         // Make an API request to retrieve user data
-        fetch(`http://localhost:8000/api/user/${username}`)
+        fetch(`https://blooming-hamlet-00342-f9cae0f8671e.herokuapp.com/api/user/${username}`)
           .then(response => response.json())
           .then(data => setUserData(data))
           .catch(error => console.error('Error fetching user data:', error));
@@ -53,7 +53,7 @@ const CreatePost = () => {
           formData.append('caption', caption);
           formData.append('username', username)
           // Send the image to the backend
-          const response = await fetch('http://localhost:8000/api/create-post', {
+          const response = await fetch('https://blooming-hamlet-00342-f9cae0f8671e.herokuapp.com/api/create-post', {
             method: 'POST',
             body: formData,
           });

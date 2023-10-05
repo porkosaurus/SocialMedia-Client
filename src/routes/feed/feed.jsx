@@ -15,7 +15,7 @@ const Feed = () => {
 
   async function fetchUserData(userId) {
     try {
-      const response = await fetch(`http://localhost:8000/api/userId/${userId}`);
+      const response = await fetch(`https://blooming-hamlet-00342-f9cae0f8671e.herokuapp.com/api/userId/${userId}`);
       const userData = await response.json();
       return userData;
     } catch (error) {
@@ -26,7 +26,7 @@ const Feed = () => {
 
   async function fetchPostsForUser(userId) {
     try {
-      const response = await fetch(`http://localhost:8000/posts/${userId}`);
+      const response = await fetch(`https://blooming-hamlet-00342-f9cae0f8671e.herokuapp.com/posts/${userId}`);
       const data = await response.json();
       return data; // Return the fetched posts
     } catch (error) {
@@ -39,7 +39,7 @@ const Feed = () => {
 
   // Fetch list of user names from the server
   useEffect(() => {
-    fetch("http://localhost:8000/users")
+    fetch("https://blooming-hamlet-00342-f9cae0f8671e.herokuapp.com/users")
       .then(response => response.json())
       .then(userList => {
         setAllUsers(userList); // Here is the list of users with names
@@ -79,7 +79,7 @@ const Feed = () => {
   // Find current user
   useEffect(() => {
     // Make an API request to retrieve user data
-    fetch(`http://localhost:8000/api/user/${username}`)
+    fetch(`https://blooming-hamlet-00342-f9cae0f8671e.herokuapp.com/user/${username}`)
       .then(response => response.json())
       .then(data => setCurrentUser(data))
       .catch(error => console.error('Error fetching user data:', error));

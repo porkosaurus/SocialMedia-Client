@@ -54,7 +54,7 @@ const RegisterForm = () => {
     formSubmitData.append('profilePicture', formData.profilePicture); // Append file
     console.log(formSubmitData.get('username'));
     console.log([...formSubmitData]);
-    const response = await fetch('http://localhost:8000/api/submit-form', {
+    const response = await fetch('https://blooming-hamlet-00342-f9cae0f8671e.herokuapp.com/api/submit-form', {
       method: 'POST',
       body: formSubmitData, // Use FormData
     });

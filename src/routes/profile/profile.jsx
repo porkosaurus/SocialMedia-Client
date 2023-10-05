@@ -45,14 +45,14 @@ const Profile = () => {
 
     useEffect(() => {
       // Make an API request to retrieve user data
-      fetch(`http://localhost:8000/api/user/${username}`)
+      fetch(`https://blooming-hamlet-00342-f9cae0f8671e.herokuapp.com/api/user/${username}`)
         .then(response => response.json())
         .then(data => setUserData(data))
         .catch(error => console.error('Error fetching user data:', error));
     }, [username]);
     
     const handleFollow = () => {
-        fetch(`http://localhost:8000/api/follow/${username}`, {
+        fetch(`https://blooming-hamlet-00342-f9cae0f8671e.herokuapp.com/api/follow/${username}`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -74,7 +74,7 @@ const Profile = () => {
     
       const handleUnfollow = () => {
         // Make an API request to unfollow the user
-        fetch(`http://localhost:8000/api/unfollow/${username}`, {
+        fetch(`https://blooming-hamlet-00342-f9cae0f8671e.herokuapp.com/api/unfollow/${username}`, {
           method: 'POST',
           // Include necessary headers or authentication tokens if needed
         })
@@ -103,7 +103,7 @@ const Profile = () => {
           formData.append('caption', caption);
           formData.append('username', storedUsername)
           // Send the image to the backend
-          const response = await fetch('http://localhost:8000/api/create-post', {
+          const response = await fetch('https://blooming-hamlet-00342-f9cae0f8671e.herokuapp.com/api/create-post', {
             method: 'POST',
             body: formData,
           });

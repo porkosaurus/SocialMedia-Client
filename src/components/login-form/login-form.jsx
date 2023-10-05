@@ -22,7 +22,7 @@ const LoginForm = () => {
     event.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:8000/api/login', {
+      const response = await fetch('https://blooming-hamlet-00342-f9cae0f8671e.herokuapp.com/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -36,7 +36,7 @@ const LoginForm = () => {
         return;
       }
 
-      const userResponse = await fetch(`http://localhost:8000/api/user/${formData.username}`, {
+      const userResponse = await fetch(`https://blooming-hamlet-00342-f9cae0f8671e.herokuapp.com/api/user/${formData.username}`, {
         method: 'GET',
         credentials: 'include'
       });

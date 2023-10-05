@@ -38,7 +38,7 @@ const Message = () => {
       useEffect(() => {
         const fetchAllMessages = async () => {
           try {
-            const response = await fetch(`http://localhost:8000/api/messages/${storedUsername}`);
+            const response = await fetch(`https://blooming-hamlet-00342-f9cae0f8671e.herokuapp.com/api/messages/${storedUsername}`);
             if (response.ok) {
               const messages = await response.json();
               setEveryMessage(messages);
@@ -75,7 +75,7 @@ const findLastMessageForUser = (userId) => {
     
 const fetchUserDataById = async (userId) => {
   try {
-    const response = await fetch(`http://localhost:8000/api/userId/${userId}`);
+    const response = await fetch(`https://blooming-hamlet-00342-f9cae0f8671e.herokuapp.com/api/userId/${userId}`);
     if (response.ok) {
       const userData = await response.json();
       return userData;
@@ -115,8 +115,8 @@ const fetchUserDataById = async (userId) => {
       
       try {
         // Make an API request to retrieve user data for sender and receiver
-        const fetchSenderData = fetch(`http://localhost:8000/api/user/${storedUsername}`);
-        const fetchReceiverData = fetch(`http://localhost:8000/api/user/${username}`);
+        const fetchSenderData = fetch(`https://blooming-hamlet-00342-f9cae0f8671e.herokuapp.com/api/user/${storedUsername}`);
+        const fetchReceiverData = fetch(`https://blooming-hamlet-00342-f9cae0f8671e.herokuapp.com/api/user/${username}`);
     
         Promise.all([fetchSenderData, fetchReceiverData])
           .then(([senderResponse, receiverResponse]) => Promise.all([senderResponse.json(), receiverResponse.json()]))
@@ -173,7 +173,7 @@ const fetchUserDataById = async (userId) => {
             // Create socket connection with the appropriate room
             try {
               console.log('Attempting to create socket connection...');
-              const newSocket = io('http://localhost:8000');
+              const newSocket = io('https://blooming-hamlet-00342-f9cae0f8671e.herokuapp.com');
               console.log('Socket created:', newSocket);
               setSocket(newSocket);
               const roomIdentifier = [receiverData._id, senderData._id].sort().join('-');
