@@ -19,20 +19,35 @@ const SearchContainer = ({ searchValue, onSubmitSearch, onSearch, onSearchButton
     // Take the first five users and set them in suggestedUsers
     setSuggestedUsers(shuffledUsers.slice(0, 5));
   }, [allUsers]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Redirect to the user profile page with the search query as a parameter
+    history.push(`/user/${searchValue}`);
+  };
+
   return (
     <div className="search-container">
       <div className='search-inner'>
-        <form onSubmit={onSubmitSearch}>
-          <input placeholder='Search for users...' className='search-input' type="text" value={searchValue} onChange={onSearch} />
+      <form onSubmit={handleSubmit}>
+          <input
+            placeholder='Search for users...'
+            className='search-input'
+            type="text"
+            value={searchValue}
+            onChange={onSearch}
+          />
           <button className='search-button' onClick={onSearchButton}>
-            <i className="fa-solid fa-magnifying-glass" onClick={onSearchButton}></i>
+            <i className="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
         <div className={`dropdown ${searchValue.length > 0 ? 'show-dropdown' : ''}`}>
         {filteredUsers.map((user) => (
+          <a className='dropdown-link' href={`/profile/${user.username}`}>
           <div className='dropdown-row' key={user._id}>
-            <a className='dropdown-link' href={`/profile/${user.username}`}>{user.username}</a>
+            {user.username}
           </div>
+          </a>
         ))}
       </div>
 
@@ -44,7 +59,7 @@ const SearchContainer = ({ searchValue, onSubmitSearch, onSearch, onSearchButton
         <img className='suggested-users-picture' src={user.profilePictureUrl} alt="" />
         <div className='suggested-users-text-container'>
         <h2 className='suggested-users-name' key={user._id}>{user.username}</h2>
-        <p className='suggested-users-text'>Tap to chat...</p>
+        <p className='suggested-users-text'><a className='unset' href={`/user/${username}`}>Tap to chat...</a>.</p>
           </div>        
         </div>
 ))}
