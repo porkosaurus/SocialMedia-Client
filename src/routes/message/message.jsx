@@ -9,8 +9,8 @@ const Message = () => {
   console.log('Message component rendering...');
   const { username: initialUsername } = useParams();
   const [username, setUsername] = useState(initialUsername);
-    const isAuthenticated = localStorage.getItem("socialMedia.username")
-    const storedUsername = localStorage.getItem("socialMedia.isAuthenticated")
+    const isAuthenticated = localStorage.getItem("socialMedia.isAuthenticated")
+    const storedUsername = localStorage.getItem("socialMedia.username")
     console.log(storedUsername)
     console.log(username)
     const [message, setMessage] = useState('default');
