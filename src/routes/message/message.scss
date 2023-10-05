@@ -1,0 +1,231 @@
+.display-info{
+    width: 85%;
+    display: flex;
+}
+
+.message-username{
+    margin-left: 2vw;
+}
+
+.message-image{
+    margin-left: 7vw;
+    background-size: cover;
+    background-position: center;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+}
+
+.convo-flex-container{
+    display: flex;
+    width: 100vw;
+    justify-content: flex-end;
+    height: 50vh;
+}
+
+.convo-container{
+    width: 75vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.dms-container{
+    background-color: white;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    color: black;
+    position: fixed;
+    left: 0;
+    height: 100vh;
+}
+  
+.profile-container{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    background-color: black;
+    opacity: 0.98;
+    font-weight: 100;
+    color: white;
+    width: 75%;
+    height: 12vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.call-container{
+    height: 12vh;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-phone, .fa-video{
+    font-size: 24px;
+}
+
+.fa-phone{
+    margin-right: 1em;
+}
+
+.message-page-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: white; 
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 140%;
+}
+
+.message{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.message-container{
+    width: 85%;
+    margin-top: 15vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+}
+
+.sent{
+    padding: 0;
+    margin-right: 5%;
+    background-color: #1982FC;
+    align-self: flex-end;
+}
+
+.received{
+    padding: 0;
+    margin-left: 5%;
+    background-color: grey;
+    align-self: flex-start;
+}
+
+.sent, .received{
+    font-size: 18px;
+    max-width: 60%;
+    min-width: 3.5em;
+    padding: 0.3em 1em;
+    margin-bottom: 1em;
+    border-radius: 10em;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.send-button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-reply{
+    color: white;
+    font-size: 14px;
+}
+
+.send-message-container{
+    width: 60%;
+    position: fixed;
+    bottom: 0;
+    right: 10%;
+    align-self: flex-end;
+
+}
+
+.message-form{
+    width: 100%;
+}
+
+.message-input{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 3%;
+    align-self: flex-end;
+    border-radius: 10em;
+    padding: 1.6em 1.4em;
+}
+
+
+.dms-header{
+    font-size: 1.8rem;
+    padding-left: 10%;
+}
+
+
+.dms-profile-picture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dms-picture{
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 100%;
+}
+
+.dms-individual{
+    padding-left: 5%;
+    padding-top: 10%;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid grey;
+    color: grey;
+    &:hover{
+        background-color: grey;
+        border-bottom: 1px solid black;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.dms-search-input{
+    padding: 0.8em 0.5em;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid grey;
+    outline: none;
+    &::placeholder{
+        font-size: 1.2rem;
+    }
+}
+
+.dms-chats-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10%;
+    width: 60%;
+    font-size: 1.5rem;
+}
+
+.dms-last-message{
+    font-size: 1rem;
+
+}

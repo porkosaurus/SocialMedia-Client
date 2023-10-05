@@ -1,0 +1,150 @@
+.select-box{
+    margin-bottom: 3%;
+    width: 40%;
+    height: 10%;
+    cursor: pointer;
+
+}
+.options{
+    width: 40%;
+    height: 280%;
+}
+
+.option{
+    background-color: white;
+    width: 247%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.1em;
+    font-size: 1.15rem;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+  
+.opt-val {
+    position: absolute;
+    left: 14px;
+    width: 217px;
+    height: 21px;
+    opacity: 0;
+    background-color: #fff;
+    transform: scale(0);
+  }
+
+.brd {
+    border: 1px solid #e2eded;
+    border-color: #eaf1f1 #e4eded #dbe7e7 #e4eded;
+    height: 80%;
+  }
+
+.first-option-container{
+    padding-left: 1em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    background-color: white;
+    font-size: 1.25rem;
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.theme-name{
+  align-self: center;
+  margin-right: 65%;
+}
+
+.chevrons {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    font-size: 8px;
+    height: 10px;
+    color: black;
+}
+  
+  #chevrons i {
+    width: 20px;
+    text-align: right;
+    margin-left: auto;  
+}
+
+i{
+    margin-left: 0.6em;
+
+}
+
+.label{
+    margin-left: 1.2em;
+}
+
+.fa-sun{
+    color: #FFA630;
+}
+
+.fa-tree{
+    color: #44AF69;
+}
+
+.fa-umbrella-beach{
+    color: #2E5077;
+}
+
+.option:nth-child(1):hover{
+    top: 0;
+    cursor: pointer;
+    background-color: #f48024;;
+    border-radius: 4px 4px 0 0;
+  }
+  
+  .option:nth-child(2):hover{
+    top: 40px;
+    cursor: pointer;
+    background-color: #251e3e;
+  }
+  
+  .option:nth-child(3):hover{
+    top: 80px;
+    cursor: pointer;
+    background-color: #32c766;
+  }
+  
+  .option:nth-child(4):hover{
+    cursor: pointer;
+    top: 120px;
+    background-color: #0057ff;
+  }
+  
+
+  
+.empty {
+    display: none;
+  }
+  
+  
+
+//animations
+
+@keyframes moveup {
+    0% {
+      bottom: -25px;
+      opacity: 0;
+    }
+    100% {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes movedown {
+    0% {
+      top: -25px;
+      opacity: 0;
+    }
+    100% {
+      top: 0;
+      opacity: 1;
+    }
+  }

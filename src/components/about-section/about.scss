@@ -1,0 +1,75 @@
+.section-2{
+    background-color: #f7f7f7;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading{
+    text-align: center;
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, #1f2029, #252843);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    transition: all .2s;
+
+    &:hover{
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba(black, 0.2);
+
+    }
+}
+
+.about-and-photos{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.about-text{
+    width: 40%;
+    height: 100%;
+    flex: 1;
+}
+
+.about-text-heading{
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph{
+    font-size: 1.15em;
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}
+
+.composition{
+    display: flex;
+    height: 100%;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.composition-image{
+    width: 30%;
+    height: 37.5%;
+}
+
+
+
+@media (max-width: 768px) {
+    h3,
+    p {
+      font-size: 0.875rem; // Decrease font size on smaller screens using rem
+    }
+}

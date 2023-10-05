@@ -1,0 +1,64 @@
+.feed-image {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+  }
+  
+.feed-image-container{
+    height: 75%;
+}
+
+  .feed-caption {
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .feed-timestamp {
+    color: grey;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+  }
+  
+
+  .feed-container{
+    padding: 2em;
+    height: 75vh;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .fa-heart, .fa-comment{
+      font-size: 20px;
+      z-index: 100;
+      color: black;
+  }
+  
+  .fa-heart{
+      margin-right: 0.4em;
+      margin-left: 0.1em;
+  }
+  
+
+  .feed-author-container{
+    height: 4.5vh;
+    display: flex;
+    color: black;
+    flex-direction: row;
+    align-items: center;
+  }
+
+
+  .author-image{
+    margin-right: 1.5rem;
+    width: 2.2rem;
+    margin-bottom: 5%;
+    height: 2.2rem;
+    border-radius: 100%;
+  }

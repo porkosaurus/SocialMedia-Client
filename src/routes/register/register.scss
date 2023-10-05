@@ -1,0 +1,195 @@
+body{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.7;
+	color: #c4c3ca;
+	background-color: #1f2029;
+	overflow-x: hidden;
+}
+
+.register-headers{
+  display: flex;
+}
+
+.form-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container{
+  padding: 3.5em;
+  padding-top: 0.4em;
+    height: 65vh;
+    width: 45vw;
+    perspective: 9999px;
+}
+
+// .card-full:hover{
+//     transform: rotateY(180deg);
+// }
+
+
+.header{
+  margin-right: 2em;
+  margin-left: 2em;
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.card-full-unchecked{
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card-full-checked{
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  transform: rotateY(180deg);
+}
+
+.card-front{
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+}
+
+.card-back{
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+  position: absolute;
+  transform: rotateY(180deg);
+}
+
+.card-full, .card-back, .card-front{
+  background-color: #2a2b38;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 300%;
+}
+
+.card-front,
+.card-back {
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
+
+
+// .checkbox:checked + label,
+// .checkbox:not(:checked) + label{
+//   position: relative;
+//   display: flex;
+//   text-align: center;
+//   width: 12vh;
+//   height: 2.5vh;
+//   border-radius: 8px;
+//   padding: 0;
+//   margin: 10px auto;
+//   cursor: pointer;
+//   background-color: #ffeba7;
+// }
+// .checkbox:checked + label:before,
+// .checkbox:not(:checked) + label:before{
+//   position: relative;
+//   display: block;
+//   width: 1.4em;
+//   height: 1.4em;
+//   border-radius: 50%;
+//   color: #ffeba7;
+//   background-color: #102770;
+//   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="0.5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>');
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: contain;
+//   font-family: 'unicons';
+//   content: '';
+//   z-index: 20;
+//   top: -10px;
+//   left: -25%;
+//   line-height: 36px;
+//   text-align: center;
+//   font-size: 24px;
+//   transition: all 0.5s ease;
+//   transform: rotate(-135deg);
+// }
+
+
+// .checkbox:checked + label:before{
+//   position: relative;
+//   display: block;
+//   left: 60%;
+//   transform: rotate(-45deg);
+// }
+
+.arrow-background{
+  cursor: pointer;
+  width: 10%;
+  height: 4.5%;
+  background-color: #ffeba7;
+  border-radius: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: transform 4s;
+}
+
+.rotate-45{
+  transform: rotate(-45deg);
+  transition: transform 4s;
+}
+
+
+.rotate-135{
+  transform: rotate(45deg);
+
+  transition: transform 4s;
+}
+
+.translate-right{
+  transform: translateX(200%);
+}
+
+.arrow-circle{
+  position: relative;
+  color: #ffeba7;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  background-color: #102770;
+  z-index: 99;
+  padding-right: 0.25rem;
+  border-radius: 50%;
+  height: 140%;
+  transition: transform 0.6s ease-in-out;
+
+}
+
+
+
+.fa-arrow-up{
+  margin-top: 20%;
+  margin-right: 85%;
+  position: relative;
+  top: 0;
+  left: 0;
+  align-self: center;
+  height: 50%;
+  text-align: center;
+  font-size: 1.4rem;
+  transition: transform 0.6s ease-in-out;
+
+}

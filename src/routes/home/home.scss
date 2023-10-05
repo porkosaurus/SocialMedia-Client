@@ -1,0 +1,124 @@
+.home-container{
+    height: 500vh;
+    width: 100vw;
+    background-color: white;
+}
+
+.logo{
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    z-index: 99;
+    height: 5vh;
+    width: 5vw;
+}
+
+.welcome-header{
+    position: relative;
+    font-size: 3rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.15rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: start;
+    color: white;
+}
+
+.welcome-btn{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em 2em;
+    align-self: flex-start;
+    width: 40%;
+    background-color: #ffeba7;
+    border-radius: 20rem;
+    color: #1f2029;
+    font-size: 1.2rem;
+    letter-spacing: 0.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    &:hover{
+        animation: buttonAnimation 0.1s;
+    }
+    &:active{
+        transform: translateX(-5%);
+    }
+}
+
+.welcome-container{
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 70vw;
+}
+
+.welcome-secondary{
+    font-size: 1.2rem;
+    margin-bottom: 2%;
+}
+
+.welcome-secondary-container{
+    margin-top: 1%;
+    margin-left: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section-1{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-position: top;
+}
+
+.blue-container{
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    background-color: #1f2029;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    opacity: 0.98;
+}
+
+
+@keyframes buttonAnimation{
+    0%{
+        transform: scale(110%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+}
+
+.section-4{
+    height: 105vh;
+    width: 100vw;
+    background-color: #1f2029;
+}
+
+.section-2{
+    height: 100vh;
+}
+
+.info-container{
+    padding: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.info-item{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+
+.info-item-paragraph{
+    font-size: 0.9rem;
+}

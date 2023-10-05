@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+h2{
+    text-align: center;
+}
+.auth-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+
+}
+
+.form-icons{
+  font-size: 1.1rem;
+  color:#ffeba7;
+  left: 2%;
+  top: 40%;
+  position: absolute;
+  z-index: 25;
+}
+
+
+.auth-form-text{
+    padding: 0.85rem 0.65rem;
+    padding-left: 3.5rem;
+    color: #c4c3ca;
+    opacity: 0.7;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.7;
+    box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+    background-color: #1f2029;
+    border: none;
+    outline: none;
+    &-container{
+        width: 70%;
+        position: relative;
+        margin-bottom: 1.5em;
+        display: flex;
+        flex-direction: column;
+    }
+    &:active{
+      padding: 0.85rem 0.65rem;
+      padding-left: 3.5rem;
+      color: #c4c3ca;
+        opacity: 0.7;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 1.7;
+        box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+        background-color: #1f2029;
+    }
+    &::placeholder{
+        color: white;
+        letter-spacing: 0.15rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+}
+
+
+input[type="text"]:-webkit-autofill {
+    background-color: #1f2029;
+  }
+
+  input[type="text"]::-ms-input-placeholder {
+    background-color: #1f2029;
+  }
+
+
+.form-gender-container{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+}
+
+.theme-and-file-container{
+    width: 100%;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn{  
+    width: 100%;
+    margin-bottom: 2em;
+    border-radius: 4px;
+    height: 44px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 200ms linear;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    background-color: #ffeba7;
+    color: #102770;
+    box-shadow: 0 8px 24px 0 rgba(255,235,167,.2);
+    &-container{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+  }
+  .btn:active,
+  .btn:focus{  
+    background-color: #102770;
+    color: #ffeba7;
+    box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
+  }
+  .btn:hover{  
+    background-color: #102770;
+    color: #ffeba7;
+    box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
+    cursor: pointer;
+  }
+
+  .register-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

@@ -1,0 +1,140 @@
+//search
+.search-container {
+    align-self: flex-start;
+    position: relative;
+    margin-top: 2em;
+    flex: 1;
+    width: 20vw;
+    background-color: white;
+    padding: 2em 2em;
+    margin-left: 2em;
+    border-radius: 2rem;
+    border: 2px solid black;
+}
+
+.fa-magnifying-glass{
+    color: black;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+.search-input{
+  border: none;
+  border: 2px solid black;
+  outline: none;
+  width: 60%;
+  color: black;
+    border-radius: 20rem;
+    padding: 0.5em 2em;
+    &::placeholder{
+      color: black;
+    }
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: black;
+    border: 1px solid #ccc;
+    border-top: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    z-index: 99;
+}
+
+.show-dropdown{
+  display: block;
+  position: relative;
+    z-index: 199;
+}
+
+.dropdown-row {
+    height: 5vh;
+    z-index: 99;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.dropdown-row:hover {
+    background-color: black;
+    color: white;
+}
+
+///FEED
+
+
+.feed-page-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+  }
+  
+  .navbar-and-feed {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-and-page{
+    width: 100vw;
+    display: flex;
+    flex: 1;
+  }
+
+  .feed-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    flex: 2;
+    padding: 20px;
+    position: relative;
+
+  }
+
+  .grid-container:nth-child(odd) .grid-item {
+    grid-column: 1;
+    position: relative;
+    top: 0;
+  }
+  
+  .grid-container:nth-child(even), .grid-item {
+    grid-column: 2;
+    position: relative;
+    top: 25%;
+  }  
+
+
+.icons-container{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+.fa-heart{
+    margin-right: 0.4em;
+    margin-left: 0.1em;
+}
+
+.feed-username-header{
+  color: black;
+  text-align: center;
+}
+
+.search-full-container{
+  padding-right: 1vw;
+  border-right: 1px solid black;
+}
+
+

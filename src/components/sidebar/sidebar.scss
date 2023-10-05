@@ -1,0 +1,97 @@
+.nav-bar{
+    border-radius: 2rem;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    height: 80%;
+    background-color: #102770;
+    overflow: hidden;
+    color: white;
+    width: 22vw;
+    padding-top: 3%;
+    font-size: 20px;
+    font-weight: 100;
+    transition: all 0.3s ease;
+}
+
+.fa-sign-out-alt, .fa-newspaper, .fa-edit{
+    margin-right: 50%;
+    color: white;
+}
+
+.nav-bar-closed{
+    width: 6%;
+}
+
+.nav-links{
+    color: white;
+    text-decoration: none;
+
+    &:visited{
+        color: white;
+    }
+}
+
+.nav-profile{
+    display: flex;
+}
+
+
+.nav-content{
+    margin-top: 0.5em;
+
+}
+
+.nav-button{
+    padding-left: 20%;
+    padding-right: 30%;
+    padding-bottom: 30%;
+    padding-top: 30%;
+    &:hover{
+        color: #102770;
+        background-color: white;
+    }
+}
+
+.nav-end{
+    height: 30vh;
+    display: flex;
+    align-self: flex-end;
+    align-items: flex-end;
+    margin-left: 2%;
+}
+
+.nav-span{
+    padding-left: 0.8em;
+}
+
+.hovered-text{
+    color: #102770;
+}
+
+.fa-bars{
+    margin-left: 40%;
+    margin-bottom: 0.8em;
+    cursor: pointer;
+
+}
+
+.nav-image{
+    margin-left: 5%;
+    width: 5vw;
+    height: 10vh;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1160px) {
+    .nav-bar {
+      width: 5vw;
+      white-space: nowrap;
+      overflow: hidden; 
+    }
+
+    .search-and-feed{
+        align-items: center;
+    }
+  }

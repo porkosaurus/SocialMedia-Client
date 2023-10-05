@@ -1,0 +1,103 @@
+.file-upload {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    width: 70%;
+    align-self: center;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .file-select {
+    border: 2px solid #dce4ec;
+    color: #34495e;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    background: #1f2029;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .file-select, .file-select-button {
+    background: #1f2029;
+    padding: 0 10px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+  }
+  
+  .file-select, .file-select-name {
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 10px;
+  }
+  
+  .file-select:hover {
+    border-color: #34495e;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .file-select:hover, .file-select-button {
+    color: #34495e;
+    background: #FFFFFF;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .file-upload.active, .file-select {
+    border-color: #3fa46a;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .file-upload.active, .file-select, .file-select-button {
+    background: #3fa46a;
+    color: #34495e;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .file-select input[type=file] {
+    z-index: 100;
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  
+  .file-select, .file-select-disabled {
+    opacity: 0.65;
+  }
+  
+  .file-select, .file-select-disabled:hover {
+    cursor: default;
+    display: block;
+    border: 2px solid #dce4ec;
+    color: #34495e;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 5px;
+    text-align: left;
+    background: #1f2029;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .file-select, .file-select-disabled:hover, .file-select-button {
+    background: white;
+    color: #666666;
+    padding: 0 10px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+  }
+  
+  .file-select, .file-select-disabled:hover, .file-select-name {
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 10px;
+  }
+  

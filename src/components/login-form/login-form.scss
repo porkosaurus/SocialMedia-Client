@@ -1,0 +1,45 @@
+.login-form{
+    &-container{
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        align-items: center;        
+    }
+    &-full-container{
+        height: 100%;
+    }
+
+    &-username{
+        margin-top: 5vh;
+    }
+
+    &-header{
+        margin-top: 5vh;
+    }
+}
+
+.login-container{
+    display: flex;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.login-text{
+    margin-left: 2em;
+    align-self: center;
+}
+
+.login-label{
+    margin-left: 6.2em;
+    &:first-child{
+        margin-top: 0.5em;
+    }
+    &:last-child{
+        margin-bottom: 4em;
+    }
+}
+
+.login-btn{
+    margin-top: 3.5em;
+    width: 60%;
+}
