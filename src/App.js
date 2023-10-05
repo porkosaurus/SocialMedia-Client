@@ -16,8 +16,7 @@ function App() {
     <AuthProvider>
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/" element={<Register />} />
         <Route path="/profile/:username" element={<Profile/>} />
         <Route path="/message/:username" element={<Message/>}/>
         <Route path="/feed/:username" element={<Feed/>}/>
