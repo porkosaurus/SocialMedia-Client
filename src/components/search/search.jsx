@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './search.scss'
 
 const SearchContainer = ({ searchValue, onSubmitSearch, onSearch, onSearchButton, filteredUsers, allUsers }) => {
+
   const [suggestedUsers, setSuggestedUsers] = useState([])
   useEffect(()=>{
     console.log(allUsers)
@@ -23,7 +24,6 @@ const SearchContainer = ({ searchValue, onSubmitSearch, onSearch, onSearchButton
   const handleSubmit = (e) => {
     e.preventDefault();
     // Redirect to the user profile page with the search query as a parameter
-    history.push(`/user/${searchValue}`);
   };
 
   return (
